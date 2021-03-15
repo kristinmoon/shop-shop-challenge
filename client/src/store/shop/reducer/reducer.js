@@ -1,5 +1,5 @@
 import * as CONST from '../constants';
-import initialSTate from './initialState';
+import initialState from './initialState';
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {

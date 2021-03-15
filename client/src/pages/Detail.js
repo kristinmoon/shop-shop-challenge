@@ -28,7 +28,7 @@ function Detail() {
     // already in global store
     if (products.length) {
       setCurrentProduct(products.find(product => product._id === id));
-    }
+    } 
     // retrieved from server
     else if (data) {
       dispatch({
@@ -103,8 +103,8 @@ function Detail() {
             <button onClick={addToCart}>
               Add to Cart
             </button>
-            <button
-              disabled={!cart.find(p => p._id === currentProduct._id)}
+            <button 
+              disabled={!cart.find(p => p._id === currentProduct._id)} 
               onClick={removeFromCart}
             >
               Remove from Cart
